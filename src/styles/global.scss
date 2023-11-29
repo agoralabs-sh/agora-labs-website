@@ -1,0 +1,122 @@
+@import "functions";
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/static/fonts/Outfit/Outfit-ExtraBold.ttf') format('truetype'),
+  url('/static/fonts/Outfit/Outfit-ExtraBold.woff2') format('woff2'),
+  url('/static/fonts/Outfit/Outfit-ExtraBold.woff') format('woff'),
+  url('/static/fonts/Outfit/Outfit-ExtraBold.svg#Outfit-ExtraBold') format('svg');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/static/fonts/Outfit/Outfit-Bold.ttf') format('truetype'),
+  url('/static/fonts/Outfit/Outfit-Bold.woff2') format('woff2'),
+  url('/static/fonts/Outfit/Outfit-Bold.woff') format('woff'),
+  url('/static/fonts/Outfit/Outfit-Bold.svg#Outfit-Bold') format('svg');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/static/fonts/Outfit/Outfit-SemiBold.ttf') format('truetype'),
+  url('/static/fonts/Outfit/Outfit-SemiBold.woff2') format('woff2'),
+  url('/static/fonts/Outfit/Outfit-SemiBold.woff') format('woff'),
+  url('/static/fonts/Outfit/Outfit-SemiBold.svg#Outfit-SemiBold') format('svg');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/static/fonts/Outfit/Outfit-Regular.ttf') format('truetype'),
+  url('/static/fonts/Outfit/Outfit-Regular.woff2') format('woff2'),
+  url('/static/fonts/Outfit/Outfit-Regular.woff') format('woff'),
+  url('/static/fonts/Outfit/Outfit-Regular.svg#Outfit-Regular') format('svg');
+}
+
+:root {
+  // custom
+  --agl-background-accent-color-dark: #303846;
+  --agl-background-accent-color-light: #cfd0d1;
+  --agl-background-primary-color-dark: #424957;
+  --agl-background-primary-color-light: #eeeff0;
+  --agl-navbar-background: linear-gradient(180deg, rgba(238,239,240, 0.6) 15%, rgba(238,239,240, 0) 100%);
+  --agl-primary-color-dark-50: #d4e5ff;
+  --agl-primary-color-dark-100: #cbdfff;
+  --agl-primary-color-dark-200: #c3daff;
+  --agl-primary-color-dark-300: #bad5ff;
+  --agl-primary-color-dark-400: #b1cfff;
+  --agl-primary-color-dark-500: #a9caff;
+  --agl-primary-color-dark-600: #92afde;
+  --agl-primary-color-dark-700: #7c95be;
+  --agl-primary-color-dark-800: #677c9e;
+  --agl-primary-color-dark-900: #536480;
+  --agl-primary-color-light-50: #90bbff;
+  --agl-primary-color-light-100: #7aadff;
+  --agl-primary-color-light-200: #639eff;
+  --agl-primary-color-light-300: #4d8fff;
+  --agl-primary-color-light-400: #347fff;
+  --agl-primary-color-light-500: #146eff;
+  --agl-primary-color-light-600: #105fde;
+  --agl-primary-color-light-700: #0c50be;
+  --agl-primary-color-light-800: #08419e;
+  --agl-primary-color-light-900: #053380;
+  --agl-sub-text-color-dark: rgba(255, 255, 255, 0.64);
+  --agl-sub-text-color-light: #718096;
+  --agl-text-color-dark: rgba(255, 255, 255, 0.92);
+  --agl-text-color-light: #4A5568;
+
+  // overrides - light theme
+  --agl-background-primary-color: var(--agl-background-primary-color-light);
+  --agl-text-color: var(--agl-text-color-light);
+  --ifm-color-content: var(--agl-text-color-light);
+  --ifm-color-primary: var(--agl-primary-color-light-500);
+  --ifm-color-primary-dark: var(--agl-primary-color-light-600);
+  --ifm-color-primary-darker: var(--agl-primary-color-light-700);
+  --ifm-color-primary-darkest: var(--agl-primary-color-light-800);
+  --ifm-color-primary-light: var(--agl-primary-color-light-400);
+  --ifm-color-primary-lighter: var(--agl-primary-color-light-300);
+  --ifm-color-primary-lightest: var(--agl-primary-color-light-200);
+  --ifm-code-font-size: 95%;
+  --ifm-font-family-base: 'Outfit';
+  --ifm-heading-font-family: 'Outfit';
+  --ifm-navbar-background-color: transparent;
+  //--ifm-navbar-link-color: var(--agl-text-color-light);
+  --ifm-navbar-link-color: var(--agl-text-color-light);
+}
+
+[data-theme='dark'] {
+  // overrides - dark theme
+  --agl-background-primary-color: var(--agl-background-primary-color-dark);
+  --agl-navbar-background: linear-gradient(180deg, rgba(66, 73, 87, 0.6) 15%, rgba(66, 73, 87, 0) 100%);
+  --agl-text-color: var(--agl-text-color-dark);
+  --ifm-color-content: var(--agl-text-color-dark);
+  --ifm-color-primary: var(--agl-primary-color-dark-500);
+  --ifm-color-primary-dark: var(--agl-primary-color-dark-600);
+  --ifm-color-primary-darker: var(--agl-primary-color-dark-700);
+  --ifm-color-primary-darkest: var(--agl-primary-color-dark-800);
+  --ifm-color-primary-light: var(--agl-primary-color-dark-400);
+  --ifm-color-primary-lighter: var(--agl-primary-color-dark-300);
+  --ifm-color-primary-lightest: var(--agl-primary-color-dark-200);
+  --ifm-navbar-background-color: transparent;
+  --ifm-navbar-link-color: var(--agl-text-color-dark);
+}
+
+/* overrides */
+.footer {
+  &__link-item {
+    &:hover {
+      color: primary-color("light");
+    }
+  }
+}
