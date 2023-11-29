@@ -1,0 +1,36 @@
+name: "Deploy"
+
+on:
+  release:
+    types: [released] # triggered on main branch releases
+
+jobs:
+  install:
+    name: "Install"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "🛎 Checkout"
+        uses: actions/checkout@v3
+      - name: "🔧 Setup"
+        uses: ./.github/actions/use-dependencies
+
+  deploy:
+    name: "Deploy"
+    needs: install
+    runs-on: ubuntu-latest
+    steps:
+      - name: "🛎 Checkout"
+        uses: actions/checkout@v3
+      - name: "🔧 Setup"
+        uses: ./.github/actions/use-dependencies
+      - name: "🏗️ Build"
+        run: yarn build
+      - name: "🚀 Deploy"
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          force_orphan: true # create empty branch if missing
+          personal_token: ${{ secrets.WRITE_REPOS_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./build
+          user_name: agoralabs-bot
+          user_email: tech@agoralabs.sh
