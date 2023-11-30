@@ -74,7 +74,7 @@ const config = {
         disableSwitch: true,
         respectPrefersColorScheme: false,
       },
-      image: 'images/social_card.png',
+      image: 'images/meta_card.png',
       metadata: [
         {
           name: 'keywords',
