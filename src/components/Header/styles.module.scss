@@ -39,7 +39,7 @@
 }
 
 .text {
-  color: text-color("light");
+  color: text-color("dark");
   text-align: center;
 
   &--attribution {
@@ -55,7 +55,7 @@
     }
 
     a {
-      color: primary-color("light");
+      color: primary-color("dark");
     }
   }
 

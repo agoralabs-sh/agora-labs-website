@@ -3,10 +3,10 @@
  */
 @function text-color($theme) {
   @if $theme != "light" {
-    @return var(--agl-text-color-light);
+    @return var(--agl-text-color-dark);
   }
 
-  @return var(--agl-text-color-dark);
+  @return var(--agl-text-color-light);
 }
 
 /**
@@ -14,8 +14,8 @@
  */
 @function primary-color($theme) {
   @if $theme != "light" {
-    @return var(--agl-primary-color-light-500);
+    @return var(--agl-primary-color-dark-500);
   }
 
-  @return var(--agl-primary-color-dark-500);
+  @return var(--agl-primary-color-light-500);
 }
