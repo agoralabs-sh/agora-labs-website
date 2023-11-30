@@ -15,6 +15,7 @@ const STYLES_DIR = path.resolve(SOURCE_DIR, 'styles');
 // links
 const AGORA_LABS_LINK = 'https://agoralabs.sh';
 const ALGORAND_PROVIDER_LINK = 'https://algorand-provider.agoralabs.sh';
+const GITHUB_LINK = 'https://github.com/agoralabs-sh';
 const KIBISIS_LINK = 'https://kibis.is';
 const X_LINK = 'https://x.com/agoralabs_sh';
 
@@ -127,8 +128,11 @@ const config = {
             ],
           },
           {
-            title: 'Social',
+            title: 'Community',
             items: [
+              {
+                html: `<a class="footer__icon footer__icon--github-icon" href="${GITHUB_LINK}" target="_blank" />`,
+              },
               {
                 html: `<a class="footer__icon footer__icon--x-icon" href="${X_LINK}" target="_blank" />`,
               },
