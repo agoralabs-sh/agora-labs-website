@@ -20,17 +20,22 @@ const Section: FC<IProps> = ({
   title,
   variant = 'primary',
 }: IProps) => {
-  let containerClass: string = styles.container;
+  let containerClass: string = styles.container__outer;
 
   if (variant === 'accent') {
-    containerClass = clsx(styles.container, styles['container--accent']);
+    containerClass = clsx(
+      styles.container__outer,
+      styles['container__outer--accent']
+    );
   }
 
   return (
     <section className={containerClass} id={id}>
-      <SectionTitle>{title}</SectionTitle>
+      <div className={styles.container__inner}>
+        <SectionTitle>{title}</SectionTitle>
 
-      {children}
+        {children}
+      </div>
     </section>
   );
 };

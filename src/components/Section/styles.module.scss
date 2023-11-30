@@ -1,16 +1,26 @@
 @import "../../styles/mixins";
 
 .container {
-  background-color: var(--agl-background-primary-color);
-  display: flex;
-  flex-direction: column;
-  padding: 5rem 1rem;
-  width: 100%;
-  @include tablet-and-up {
-    padding: 5rem;
+  &__inner {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1000px;
   }
 
-  &--accent {
-    background-color: var(--agl-background-accent-color);
+  &__outer {
+    background-color: var(--agl-background-primary-color);
+    display: flex;
+    justify-content: center;
+    padding: 5rem 1rem;
+    width: 100%;
+    @include tablet-and-up {
+      padding: 5rem;
+    }
+
+    &--accent {
+      background-color: var(--agl-background-accent-color);
+    }
   }
 }

@@ -2,3 +2,9 @@
   background: var(--agl-navbar-background);
   box-shadow: none;
 }
+
+.navbar-sidebar {
+  &__brand {
+    box-shadow: none;
+  }
+}

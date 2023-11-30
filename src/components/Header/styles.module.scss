@@ -39,7 +39,7 @@
 }
 
 .text {
-  color: text-color("light");
+  color: text-color("dark");
   text-align: center;
 
   &--attribution {
@@ -55,7 +55,7 @@
     }
 
     a {
-      color: primary-color("light");
+      color: primary-color("dark");
     }
   }
 
@@ -63,6 +63,14 @@
     font-size: 1rem;
     @include tablet-and-up {
       font-size: 1.4rem;
+    }
+  }
+
+  &--title {
+    font-size: 2rem;
+    font-weight: 500;
+    @include tablet-and-up {
+      font-size: 4rem;
     }
   }
 }

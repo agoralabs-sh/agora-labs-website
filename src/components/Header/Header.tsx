@@ -1,3 +1,4 @@
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import clsx from 'clsx';
 import React, { FC } from 'react';
 
@@ -5,19 +6,17 @@ import React, { FC } from 'react';
 import styles from './styles.module.scss';
 
 const Header: FC = () => {
+  const { siteConfig } = useDocusaurusContext();
+
   return (
     <header className={styles.wrapper}>
       {/*title and tagline*/}
       <div className={styles.container__content}>
-        <div className={styles.container__image}>
-          <img
-            alt="Agora Labs banner logo"
-            className={styles.image}
-            src="/images/banner_logo-dark.png"
-          />
-        </div>
-
         <div className={styles.container__text}>
+          <h2 className={clsx(styles.text, styles['text--title'])}>
+            {siteConfig.tagline}
+          </h2>
+
           <p className={clsx(styles.text, styles['text--subtitle'])}>
             Through collaborative efforts, we strive to create tools,
             applications, and systems that empower individuals, uplift
