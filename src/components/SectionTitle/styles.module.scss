@@ -35,4 +35,7 @@ $square_size: 32px;
   justify-content: center;
   padding-bottom: 1rem;
   width: 100%;
+  @include tablet-and-up {
+    justify-content: flex-start;
+  }
 }

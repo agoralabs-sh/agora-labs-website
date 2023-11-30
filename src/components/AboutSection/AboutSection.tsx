@@ -18,9 +18,9 @@ const AboutSection: FC<IProps> = ({ variant }: IProps) => {
     <Section id="about" title="About" variant={variant}>
       <div className={styles.container__text}>
         <Text>
-          Agora Labs is a forward-thinking Web3 organization committed to
-          building tools, applications, and systems that prioritize
-          sustainability and empathy for all of humanity.
+          Agora Labs is a Web3 organization committed to building tools,
+          applications, and systems that prioritize sustainability and empathy
+          for all of humanity.
         </Text>
 
         <Heading level="h3">Empathy-Driven Innovation</Heading>
