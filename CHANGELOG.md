@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/agoralabs-sh/agora-labs-website/compare/v1.1.0...v1.2.0) (2023-11-30)
+
+
+### Features
+
+* update section styling ([#3](https://github.com/agoralabs-sh/agora-labs-website/issues/3)) ([86f0070](https://github.com/agoralabs-sh/agora-labs-website/commit/86f0070c40e84caf1ea694f9c96f3687ba8118a8))
+
 # [1.1.0](https://github.com/agoralabs-sh/agora-labs-website/compare/v1.0.0...v1.1.0) (2023-11-30)
 
 

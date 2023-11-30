@@ -1,6 +1,6 @@
 {
   "name": "@agoralabs-sh/agora-labs-website",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "The front facing website for the Agora Labs.",
   "repository": {
     "type": "git",
