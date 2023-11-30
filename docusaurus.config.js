@@ -91,11 +91,6 @@ const config = {
             to: '/#about',
           },
           {
-            label: 'Collective',
-            position: 'right',
-            to: '/#collective',
-          },
-          {
             label: 'Blog',
             position: 'right',
             to: '/blog',
@@ -113,14 +108,10 @@ const config = {
                 label: 'Home',
                 to: '/',
               },
-              // {
-              //   label: 'About',
-              //   to: '/#about',
-              // },
-              // {
-              //   label: 'Collective',
-              //   to: '/#collective',
-              // },
+              {
+                label: 'About',
+                to: '/#about',
+              },
               {
                 label: 'Blog',
                 href: '/blog',

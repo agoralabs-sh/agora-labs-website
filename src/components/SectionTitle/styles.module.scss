@@ -1,0 +1,38 @@
+@import "../../styles/mixins";
+
+$square_size: 32px;
+
+.container {
+  align-items: center;
+  display: flex;
+  height: calc($square_size * 2);
+  justify-content: center;
+  position: relative;
+}
+
+.square {
+  background-color: var(--ifm-color-primary);
+  height: $square_size;
+  left: 0;
+  margin-left: calc(-1 * ($square_size / 2));
+  position: absolute;
+  width: $square_size;
+  top: 0;
+  z-index: 0;
+}
+
+.text {
+  color: var(--agl-text-color);
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  z-index: 1;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+  width: 100%;
+}

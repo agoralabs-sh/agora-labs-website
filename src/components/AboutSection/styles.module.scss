@@ -1,0 +1,20 @@
+@import "../../styles/mixins";
+
+.container {
+  &__text {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem 0 0;
+    text-align: center;
+    @include tablet-and-up {
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    &>p {
+      padding: 0 0 1rem;
+    }
+  }
+}
