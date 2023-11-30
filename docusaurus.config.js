@@ -88,7 +88,7 @@ const config = {
           {
             label: 'About',
             position: 'right',
-            to: '/#about',
+            href: '/#about',
           },
           {
             label: 'Blog',
@@ -106,11 +106,11 @@ const config = {
             items: [
               {
                 label: 'Home',
-                to: '/',
+                href: '/',
               },
               {
                 label: 'About',
-                to: '/#about',
+                href: '/#about',
               },
               {
                 label: 'Blog',
