@@ -83,6 +83,11 @@ const config = {
         },
       ],
       navbar: {
+        logo: {
+          alt: 'Agora Labs banner logo',
+          src: 'images/banner_logo-light.png',
+          srcDark: 'images/banner_logo-dark.png',
+        },
         items: [
           // right
           {
