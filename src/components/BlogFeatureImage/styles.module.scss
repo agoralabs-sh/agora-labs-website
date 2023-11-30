@@ -1,0 +1,32 @@
+@import "../../styles/mixins";
+
+.attribution {
+  &-container {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &-text {
+    font-size: 0.85rem;
+    line-height: 0.85rem;
+    padding: 0.25rem;
+    margin: 0;
+    text-align: right;
+    @include tablet-and-up {
+      font-size: 1rem;
+      line-height: 1rem;
+    }
+  }
+}
+
+.attribution-container {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image-container {
+  padding: 0 0 2rem;
+  width: 100%;
+}

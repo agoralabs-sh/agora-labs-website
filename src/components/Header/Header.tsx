@@ -8,8 +8,8 @@ const Header: FC = () => {
   return (
     <header className={styles.wrapper}>
       {/*title and tagline*/}
-      <div className={styles['content-container']}>
-        <div className={styles['image-container']}>
+      <div className={styles.container__content}>
+        <div className={styles.container__image}>
           <img
             alt="Agora Labs banner logo"
             className={styles.image}
@@ -17,15 +17,17 @@ const Header: FC = () => {
           />
         </div>
 
-        <p className={clsx(styles.text, styles['text--subtitle'])}>
-          Through collaborative efforts, we strive to create tools,
-          applications, and systems that empower individuals, uplift
-          communities, and contribute to the greater good.
-        </p>
+        <div className={styles.container__text}>
+          <p className={clsx(styles.text, styles['text--subtitle'])}>
+            Through collaborative efforts, we strive to create tools,
+            applications, and systems that empower individuals, uplift
+            communities, and contribute to the greater good.
+          </p>
+        </div>
       </div>
 
       {/*attribution*/}
-      <div className={styles['attribution-container']}>
+      <div className={styles.container__attribution}>
         <p className={clsx(styles.text, styles['text--attribution'])}>
           Image by{` `}
           <a

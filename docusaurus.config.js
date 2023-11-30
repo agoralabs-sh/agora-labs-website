@@ -15,6 +15,7 @@ const STYLES_DIR = path.resolve(SOURCE_DIR, 'styles');
 // links
 const AGORA_LABS_LINK = 'https://agoralabs.sh';
 const ALGORAND_PROVIDER_LINK = 'https://algorand-provider.agoralabs.sh';
+const GITHUB_LINK = 'https://github.com/agoralabs-sh';
 const KIBISIS_LINK = 'https://kibis.is';
 const X_LINK = 'https://x.com/agoralabs_sh';
 
@@ -74,7 +75,7 @@ const config = {
         disableSwitch: true,
         respectPrefersColorScheme: false,
       },
-      image: 'images/social_card.png',
+      image: 'images/meta_card.png',
       metadata: [
         {
           name: 'keywords',
@@ -88,11 +89,6 @@ const config = {
             label: 'About',
             position: 'right',
             to: '/#about',
-          },
-          {
-            label: 'Collective',
-            position: 'right',
-            to: '/#collective',
           },
           {
             label: 'Blog',
@@ -112,14 +108,10 @@ const config = {
                 label: 'Home',
                 to: '/',
               },
-              // {
-              //   label: 'About',
-              //   to: '/#about',
-              // },
-              // {
-              //   label: 'Collective',
-              //   to: '/#collective',
-              // },
+              {
+                label: 'About',
+                to: '/#about',
+              },
               {
                 label: 'Blog',
                 href: '/blog',
@@ -127,8 +119,11 @@ const config = {
             ],
           },
           {
-            title: 'Social',
+            title: 'Community',
             items: [
+              {
+                html: `<a class="footer__icon footer__icon--github-icon" href="${GITHUB_LINK}" target="_blank" />`,
+              },
               {
                 html: `<a class="footer__icon footer__icon--x-icon" href="${X_LINK}" target="_blank" />`,
               },
