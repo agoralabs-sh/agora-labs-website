@@ -5,7 +5,6 @@ import styles from './styles.module.scss';
 
 // types
 import { IAttribution } from './types';
-import clsx from 'clsx';
 
 interface IProps {
   attribution?: IAttribution;
